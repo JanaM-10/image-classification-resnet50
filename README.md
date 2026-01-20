@@ -35,9 +35,7 @@ image-classification-resnet50-enhancement/
 
 The dataset (~2GB) is **not included** due to GitHub size limits.  
 
-You can download it from **Google Drive**:  
-
-[Download Dataset](#)  
+You can download it from **https://drive.google.com/drive/folders/1q2xBKP1ExttsHQT2joEfJPty0vXDNGjX?usp=sharing**:  
 
 After downloading, extract the zip and make sure the folder structure is:
 
@@ -50,33 +48,27 @@ dataset/
 ---
 
 ## Installation
-
 Clone the repository:
 
 git clone https://github.com/YOUR_USERNAME/image-classification-resnet50-enhancement.git
 cd image-classification-resnet50-enhancement
-Install Python dependencies:
 
+Install Python dependencies:
 pip install -r requirements.txt
 
 # Usage
 
 ## 1. Training the Model
-
 Run the training script:
 python python/train.py
 
 This will:
 
--Load images from the dataset
-
--Split them into train, validation, and test sets
-
--Train the ResNet50 + Inception-style head model in two stages (frozen backbone + fine-tuning)
-
--Save the best models in results/models/
-
--Plot training/validation accuracy and loss curves
+- Load images from the dataset
+- Split them into train, validation, and test sets
+- Train the ResNet50 + Inception-style head model in two stages (frozen backbone + fine-tuning)
+- Save the best models in results/models/
+- Plot training/validation accuracy and loss curves
 
 ## 2. Patch-Based Inference
 Use the script python/inference.py to perform patch-based prediction on new images:
@@ -85,7 +77,6 @@ python python/inference.py
 Patch-based inference allows detection of:
 
 - Major class: the dominant class in the image
-
 - Secondary classes: classes covering significant areas
 
 Visualization of patch predictions as a grid is also supported.
@@ -94,17 +85,12 @@ Visualization of patch predictions as a grid is also supported.
 Evaluation is automatically done after training, including metrics such as:
 
 Accuracy
-
 Macro F1 score
-
 Top-2 accuracy
-
 AUC (One-vs-Rest)
-
 Confusion matrices
 
 ## Requirements
-
 The required Python packages are listed in `requirements.txt`:
 
 - `tensorflow==2.13.0`
@@ -116,7 +102,6 @@ The required Python packages are listed in `requirements.txt`:
 - `scikit-learn==1.3.0`
 
 You can install all dependencies using:
-
 pip install -r requirements.txt
 
 ---
