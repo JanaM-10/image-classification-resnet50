@@ -84,9 +84,9 @@ Use the script python/inference.py to perform patch-based prediction on new imag
 python python/inference.py
 Patch-based inference allows detection of:
 
--Major class: the dominant class in the image
+- Major class: the dominant class in the image
 
--Secondary classes: classes covering significant areas
+- Secondary classes: classes covering significant areas
 
 Visualization of patch predictions as a grid is also supported.
 
