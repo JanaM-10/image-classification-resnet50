@@ -56,6 +56,8 @@ cd image-classification-resnet50-enhancement
 Install Python dependencies:
 pip install -r requirements.txt
 
+---
+
 # Usage
 
 ## 1. Training the Model
