@@ -92,6 +92,8 @@ Top-2 accuracy
 AUC (One-vs-Rest)
 Confusion matrices
 
+---
+
 ## Requirements
 The required Python packages are listed in `requirements.txt`:
 
