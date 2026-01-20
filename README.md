@@ -118,8 +118,6 @@ The required Python packages are listed in `requirements.txt`:
 - `matplotlib==3.8.0`
 - `seaborn==0.12.3`
 - `scikit-learn==1.3.0`
-- `opencv-python==4.8.0.76`
-- `tqdm==4.66.1`
 
 You can install all dependencies using:
 
