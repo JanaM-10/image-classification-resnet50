@@ -50,7 +50,7 @@ dataset/
 ## Installation
 Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/image-classification-resnet50-enhancement.git
+git clone https://github.com/JanaM-10/image-classification-resnet50-enhancement.git
 cd image-classification-resnet50-enhancement
 
 Install Python dependencies:
