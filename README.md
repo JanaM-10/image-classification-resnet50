@@ -59,9 +59,11 @@ Install Python dependencies:
 
 pip install -r requirements.txt
 
-##Usage
-1. Training the Model
-Run the training script located in python/:
+# Usage
+
+## 1. Training the Model
+
+Run the training script located in the `python/` folder:
 
 python python/train.py
 This will:
@@ -81,8 +83,9 @@ Save the best models in results/models/
 Plot training/validation accuracy and loss curves
 
 2. Patch-Based Inference
-Use the scripts in python/inference.py to perform patch-based prediction on new images.
+Use the script python/inference.py to perform patch-based prediction on new images:
 
+python python/inference.py
 Patch-based inference allows detection of:
 
 Major class: the dominant class in the image
@@ -103,8 +106,6 @@ Top-2 accuracy
 AUC (One-vs-Rest)
 
 Confusion matrices
-
-Plots are saved in results/figures/.
 
 Requirements
 Listed in requirements.txt:
