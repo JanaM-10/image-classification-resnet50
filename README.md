@@ -82,7 +82,7 @@ Save the best models in results/models/
 
 Plot training/validation accuracy and loss curves
 
-2. Patch-Based Inference
+## 2. Patch-Based Inference
 Use the script python/inference.py to perform patch-based prediction on new images:
 
 python python/inference.py
@@ -94,7 +94,7 @@ Secondary classes: classes covering significant areas
 
 Visualization of patch predictions as a grid is also supported.
 
-3. Evaluate on Test Set
+## 3. Evaluate on Test Set
 Evaluation is automatically done after training, including metrics such as:
 
 Accuracy
@@ -107,33 +107,34 @@ AUC (One-vs-Rest)
 
 Confusion matrices
 
-Requirements
-Listed in requirements.txt:
+## Requirements
 
-tensorflow==2.13.0
-keras==2.13.1
-numpy==1.25.0
-pandas==2.1.0
-matplotlib==3.8.0
-seaborn==0.12.3
-scikit-learn==1.3.0
-opencv-python==4.8.0.76
-tqdm==4.66.1
-Paper
-The original research paper is included in paper.pdf.
-It explains the architecture, dataset, and inference approach in detail.
+The required Python packages are listed in `requirements.txt`:
 
-Notes
-Ensure dataset paths are correct when running scripts.
+- `tensorflow==2.13.0`
+- `keras==2.13.1`
+- `numpy==1.25.0`
+- `pandas==2.1.0`
+- `matplotlib==3.8.0`
+- `seaborn==0.12.3`
+- `scikit-learn==1.3.0`
+- `opencv-python==4.8.0.76`
+- `tqdm==4.66.1`
 
-GPU is recommended for training due to the ResNet50 backbone.
+You can install all dependencies using:
 
-Patch-based inference can be used for multi-class detection within a single image.
+pip install -r requirements.txt
 
-🎯 Goal
-This repository provides a ready-to-run deep learning pipeline for image classification with an enhanced ResNet50 architecture and patch-based predictions, fully reproducible with provided scripts and dataset instructions.
+---
 
-ى
+## Paper
+
+The original research paper is included as `paper.pdf`. It explains in detail the:
+
+- Architecture
+- Dataset
+- Inference approach
+
 
 
 
