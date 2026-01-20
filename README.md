@@ -63,24 +63,20 @@ pip install -r requirements.txt
 
 ## 1. Training the Model
 
-Run the training script located in the `python/` folder:
-
+Run the training script:
 python python/train.py
+
 This will:
 
-Load images from the dataset
+-Load images from the dataset
 
-Split them into train, validation, and test sets
+-Split them into train, validation, and test sets
 
-Train the ResNet50 + Inception-style head model in two stages:
+-Train the ResNet50 + Inception-style head model in two stages (frozen backbone + fine-tuning)
 
-Frozen backbone
+-Save the best models in results/models/
 
-Fine-tuning
-
-Save the best models in results/models/
-
-Plot training/validation accuracy and loss curves
+-Plot training/validation accuracy and loss curves
 
 ## 2. Patch-Based Inference
 Use the script python/inference.py to perform patch-based prediction on new images:
@@ -88,9 +84,9 @@ Use the script python/inference.py to perform patch-based prediction on new imag
 python python/inference.py
 Patch-based inference allows detection of:
 
-Major class: the dominant class in the image
+-Major class: the dominant class in the image
 
-Secondary classes: classes covering significant areas
+-Secondary classes: classes covering significant areas
 
 Visualization of patch predictions as a grid is also supported.
 
