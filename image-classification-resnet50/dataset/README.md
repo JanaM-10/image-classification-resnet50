@@ -8,8 +8,10 @@ You can download it from Google Drive:
 After downloading, extract the zip and make sure the folder structure is:
 
 dataset/
+
 ├─ Buildings/
 ├─ Cars/
 ├─ Labs/
 ├─ People/
 └─ Trees/
+
