@@ -1,6 +1,6 @@
 # Campus Scene Recognition with ResNet50
 
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.13-orange) ![Keras](https://img.shields.io/badge/Keras-2.13-red) ![Python](https://img.shields.io/badge/Python-3.x-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.20-orange) ![Keras](https://img.shields.io/badge/Keras-3.13-red) ![Python](https://img.shields.io/badge/Python-3.x-blue)
 
 A deep learning framework for multi-class image classification of complex campus scenes. The architecture combines a pre-trained **ResNet50** backbone with a lightweight **Inception-style** classification head to capture multi-scale visual features, and uses **patch-based inference** to detect both primary and secondary classes within a single image.
 
@@ -83,13 +83,13 @@ dataset/
 
 ## Requirements
 
-- tensorflow==2.13.0
-- keras==2.13.1
-- numpy==1.25.0
-- pandas==2.1.0
-- matplotlib==3.8.0
-- seaborn==0.12.3
-- scikit-learn==1.3.0
+- tensorflow==2.20.0
+- keras==3.13.2
+- numpy==2.0.2
+- pandas==2.2.2
+- matplotlib==3.10.0
+- seaborn==0.13.2
+- scikit-learn==1.6.1
 
 ## How to Run
 
