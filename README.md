@@ -23,7 +23,23 @@ A deep learning framework for multi-class image classification of complex campus
 
 ## Results
 
-*(Add your confusion matrix and/or accuracy/loss curve images to `results/` and reference them here.)*
+**Training Curves — Stage 1 (frozen backbone)**
+
+![Stage 1 accuracy](results/stage1_accuracy.png)
+![Stage 1 loss](results/stage1_loss.png)
+
+**Training Curves — Stage 2 (fine-tuning)**
+
+![Stage 2 accuracy](results/stage2_accuracy.png)
+![Stage 2 loss](results/stage2_loss.png)
+
+Fine-tuning the last 30 layers in Stage 2 pushed validation accuracy from ~93% to ~98.6%, with validation loss dropping below 0.1.
+
+**Confusion Matrix (Test Set)**
+
+![Confusion matrix - test set](results/confusion_matrix_test.png)
+
+**Patch-Based Inference Example**
 
 ![Patch-based inference visualization](results/patch_inference_example.png)
 
@@ -111,9 +127,9 @@ dataset/
 
 This project was developed as a group project in the Artificial Intelligence Department, University of Jordan, under the supervision of Instructor Tamam AlSarhan.
 
-- Jana Abubaje
 - Hiba Hamed
 - Noor Yacoub
 - Saja Obaidat
+- Jana Abubaje
 
 Full methodology, experiments, and results are documented in [`Paper/Image_Classification_ResNet50.pdf`](Paper/Image_Classification_ResNet50.pdf).
