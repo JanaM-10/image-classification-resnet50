@@ -123,13 +123,5 @@ dataset/
 - Experiment with additional backbones (EfficientNet, ConvNeXt) for comparison
 - Add a lightweight inference API/demo for non-technical viewers
 
-## Team
-
-This project was developed as a group project in the Artificial Intelligence Department, University of Jordan, under the supervision of Instructor Tamam AlSarhan.
-
-- Hiba Hamed
-- Noor Yacoub
-- Saja Obaidat
-- Jana Abubaje
 
 Full methodology, experiments, and results are documented in [`Paper/Image_Classification_ResNet50.pdf`](Paper/Image_Classification_ResNet50.pdf).
